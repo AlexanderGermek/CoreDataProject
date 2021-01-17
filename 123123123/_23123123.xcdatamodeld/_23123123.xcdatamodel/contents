@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Group" representedClassName="Group" parentEntity="Object" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="student" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Student" inverseName="group" inverseEntity="Student"/>
+    </entity>
+    <entity name="Object" representedClassName="Object" isAbstract="YES" syncable="YES" codeGenerationType="class"/>
+    <entity name="Student" representedClassName="Student" parentEntity="Object" syncable="YES" codeGenerationType="class">
+        <attribute name="averageGrade" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="car" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="pathToPhoto" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="student" inverseEntity="Group"/>
+    </entity>
+    <elements>
+        <element name="Group" positionX="-503.953125" positionY="77.98046875" width="128" height="73"/>
+        <element name="Object" positionX="-749.046875" positionY="-221.01953125" width="128" height="43"/>
+        <element name="Student" positionX="-933.9921875" positionY="4.01171875" width="128" height="148"/>
+    </elements>
+</model>
