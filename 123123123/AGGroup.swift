@@ -10,6 +10,5 @@ import UIKit
 
 class AGGroup: NSObject {
     var name = ""
-    var students: [AGStudent] = []
-
+    var students: [AGStudent] = []    
 }

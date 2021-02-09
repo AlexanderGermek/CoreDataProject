@@ -23,6 +23,7 @@
 		8457BFE925B2003B00C5424A /* student3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8457BFE325B2003A00C5424A /* student3.jpg */; };
 		8457BFEA25B2003B00C5424A /* student1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8457BFE425B2003A00C5424A /* student1.jpg */; };
 		8457BFF025B217A300C5424A /* _23123123.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8457BFEE25B217A300C5424A /* _23123123.xcdatamodeld */; };
+		88BDEF7925D2CCAA00A06662 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDEF7825D2CCAA00A06662 /* CoreDataFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8457BFE325B2003A00C5424A /* student3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = student3.jpg; sourceTree = "<group>"; };
 		8457BFE425B2003A00C5424A /* student1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = student1.jpg; sourceTree = "<group>"; };
 		8457BFEF25B217A300C5424A /* _23123123.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _23123123.xcdatamodel; sourceTree = "<group>"; };
+		88BDEF7825D2CCAA00A06662 /* CoreDataFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +78,9 @@
 		84489CE025AE59B4005A82B2 /* 123123123 */ = {
 			isa = PBXGroup;
 			children = (
-				84489CE125AE59B4005A82B2 /* AppDelegate.swift */,
-				8457BFEE25B217A300C5424A /* _23123123.xcdatamodeld */,
-				84489D4725AE5A80005A82B2 /* AGStudentCell.swift */,
-				84489D4A25AE5A86005A82B2 /* AGGroup.swift */,
-				84489D4925AE5A86005A82B2 /* AGStudent.swift */,
-				84489CE325AE59B4005A82B2 /* SceneDelegate.swift */,
-				84489CE525AE59B4005A82B2 /* ViewController.swift */,
-				84489CE725AE59B4005A82B2 /* Main.storyboard */,
+				88BDEF8025D2FC5600A06662 /* System */,
+				88BDEF7525D2CC0B00A06662 /* Model */,
+				88BDEF8225D2FC7F00A06662 /* ViewController */,
 				84489CED25AE59C3005A82B2 /* Assets.xcassets */,
 				8457BFDE25B2003A00C5424A /* StudentsPhoto */,
 				84489CEF25AE59C3005A82B2 /* LaunchScreen.storyboard */,
@@ -103,6 +100,36 @@
 				8457BFE425B2003A00C5424A /* student1.jpg */,
 			);
 			path = StudentsPhoto;
+			sourceTree = "<group>";
+		};
+		88BDEF7525D2CC0B00A06662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84489D4725AE5A80005A82B2 /* AGStudentCell.swift */,
+				84489D4925AE5A86005A82B2 /* AGStudent.swift */,
+				84489D4A25AE5A86005A82B2 /* AGGroup.swift */,
+				88BDEF7825D2CCAA00A06662 /* CoreDataFunctions.swift */,
+				8457BFEE25B217A300C5424A /* _23123123.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		88BDEF8025D2FC5600A06662 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				84489CE125AE59B4005A82B2 /* AppDelegate.swift */,
+				84489CE325AE59B4005A82B2 /* SceneDelegate.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		88BDEF8225D2FC7F00A06662 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84489CE525AE59B4005A82B2 /* ViewController.swift */,
+				84489CE725AE59B4005A82B2 /* Main.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +215,7 @@
 				84489CE225AE59B4005A82B2 /* AppDelegate.swift in Sources */,
 				84489D4825AE5A80005A82B2 /* AGStudentCell.swift in Sources */,
 				84489CE425AE59B4005A82B2 /* SceneDelegate.swift in Sources */,
+				88BDEF7925D2CCAA00A06662 /* CoreDataFunctions.swift in Sources */,
 				84489D4B25AE5A86005A82B2 /* AGStudent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

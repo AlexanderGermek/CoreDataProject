@@ -31,6 +31,8 @@ class AGStudent: NSObject {
     var car         = ""
     var averageGrade: CGFloat = 0
     
+    
+    //MARK: Funtions
     func randomStudent() -> AGStudent {
         let student = AGStudent()
         
